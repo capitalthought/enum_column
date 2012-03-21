@@ -201,8 +201,4 @@ class EnumerationsTest < Test::Unit::TestCase
     assert object.new_record?
   end
 
-  def test_quoting
-    value = Enumeration.send(:sanitize_sql, ["value = ? ", :"'" ] )
-    assert_equal "value = '\\'' ", value
-  end
 end

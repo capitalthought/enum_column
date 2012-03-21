@@ -6,7 +6,6 @@ if defined?(::Rails::Railtie)
         require 'enum/enum_adapter'
         require 'enum/schema_statements'
         require 'enum/schema_definitions'
-        require 'enum/quoting'
         require 'enum/validations'
       end
 
